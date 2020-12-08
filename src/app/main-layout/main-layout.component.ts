@@ -1,5 +1,5 @@
 import { style } from '@angular/animations';
-import { NgStyle } from '@angular/common';
+import { NgClass, NgStyle } from '@angular/common';
 import { Component, OnInit,} from '@angular/core';
 
 @Component({
@@ -10,7 +10,7 @@ import { Component, OnInit,} from '@angular/core';
 
 export class MainLayoutComponent implements OnInit {
 
-  show = "mobile-menu";
+  show = [NgClass];
 
   constructor() { }
 
@@ -18,6 +18,8 @@ export class MainLayoutComponent implements OnInit {
 
   }
 
+  showMobileMenu() {
+  }
 }
 
  

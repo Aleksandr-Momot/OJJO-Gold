@@ -13,6 +13,11 @@
     }
     .main-logo {
         display: flex;
+        .mat-toolbar-row {
+            @media(min-width:992px) {
+                display: none;
+            }
+        }
         .mobile-icon {
             color: #fff;
         }
@@ -28,12 +33,6 @@
             background-color: #333333;
             height: 100%;
             align-items: flex-start;
-            &.mobile-btn {
-                display: block;
-                @media(min-width:992px) {
-                    display: none;
-                }
-            }
             p {
                 a {
                     text-decoration: none;
@@ -41,8 +40,6 @@
                     color: #FFFFFF;
                 }
             }
-            
-            
         }
     }
     .main-tabs {
