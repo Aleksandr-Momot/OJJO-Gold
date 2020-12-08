@@ -1,5 +1,3 @@
-import { style } from '@angular/animations';
-import { NgStyle } from '@angular/common';
 import { Component, OnInit,} from '@angular/core';
 
 @Component({
@@ -10,7 +8,7 @@ import { Component, OnInit,} from '@angular/core';
 
 export class MainLayoutComponent implements OnInit {
 
-  show = false;
+  show = true;
 
   constructor() { }
 
