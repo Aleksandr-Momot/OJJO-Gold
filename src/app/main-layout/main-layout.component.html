@@ -1,28 +1,49 @@
-<div class="container">
-    <div class="header">
-        <div class="main-tabs">
-            <ul>
-                <li><a href="#">Контрагентам</a></li>
-                <li><a href="#">Дизайнерам</a></li>
-                <li><a href="#">Вакансии</a></li>
-            </ul>
-        </div>
-    
-        <div class="main-logo">
-            <a href="#"><img src="/assets/images/ojjo-main-logosvg.svg" alt=""></a>
-        </div>
-    
-        <div class="info-tabs">
-            <ul>
-                <li><a href=""><img src="/assets/images/search.svg" alt=""></a></li>
-                <li><a href="">Поиск</a></li>
-                <li><a href="">Вход</a></li>
-                <li><a href="">Регистрация</a></li>
-                <li><a href=""><img src="/assets/images/account.svg" alt=""></a></li>
-                <li><a href=""><img src="/assets/images/like.svg" alt=""></a></li>
-            </ul>
-    
-        </div>
+
+<div class="header-wrapper">
+    <div class="container">
+            <div class="header">
+                <div class="main-tabs">
+                    <ul>
+                        <li><a href="#">Контрагентам</a></li>
+                        <li><a href="#">Дизайнерам</a></li>
+                        <li><a href="#">Вакансии</a></li>
+                    </ul>
+                </div>
+            
+                <div class="main-logo">
+                    <a href="#"><img src="/assets/images/ojjo-main-logosvg.svg" alt=""></a>
+                    <mat-toolbar-row class="mobile-btn">
+                        <span class="example-spacer"></span>
+                        <button (click)="showMobileMenu()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+                          <mat-icon class="mobile-icon">menu</mat-icon>
+                        </button>
+                        <!-- <input type="checkbox" [(ngModel)]="show" /> -->
+                      </mat-toolbar-row>
+                </div>
+                <div class="mobile-menu">
+                    <mat-toolbar>
+                        <mat-toolbar-row>
+                          <p><a href="#">Контрагентам</a></p>
+                          <p><a href="#">Дизайнерам</a></p>
+                          <p><a href="#">Вакансии</a></p>
+                          <p><a href="#">Вход/Регистрация</a></p>
+                          <span class="example-spacer"></span>
+                        </mat-toolbar-row>
+                    </mat-toolbar>
+                </div>
+                
+
+                <div class="info-tabs">
+                    <ul>
+                        <li><a href=""><img src="/assets/images/search.svg" alt=""></a></li>
+                        <li><a href="">Поиск</a></li>
+                        <li><a href="">Вход</a></li>
+                        <li><a href="">Регистрация</a></li>
+                        <li><a href=""><img src="/assets/images/account.svg" alt=""></a></li>
+                        <li><a href=""><img src="/assets/images/like.svg" alt=""></a></li>
+                    </ul>
+            
+                </div>
+            </div>
     </div>
-    
 </div>

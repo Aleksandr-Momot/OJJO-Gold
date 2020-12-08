@@ -2,8 +2,10 @@
 @import "./scss/base/base";
 @import "./scss/base/normalize";
 @import "./scss/utilities/mixins";
+@import "./scss/base/typography";
 
 //COMPONENTS
 @import "./scss/components/container";
 // html, body { height: 100%; }
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
