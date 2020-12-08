@@ -1,3 +1,4 @@
+
 import { Component, OnInit,} from '@angular/core';
 
 @Component({
@@ -19,6 +20,8 @@ export class MainLayoutComponent implements OnInit {
     this.show=!this.show;
 }
 
+  showMobileMenu() {
+  }
 }
 
  
