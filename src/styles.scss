@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+//BASE
+@import "./scss/base/base";
+@import "./scss/base/normalize";
+@import "./scss/utilities/mixins";
+
+//COMPONENTS
+@import "./scss/components/container";
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
