@@ -10,13 +10,16 @@ import { Component, OnInit,} from '@angular/core';
 
 export class MainLayoutComponent implements OnInit {
 
-  show = [NgClass];
+  show = false;
 
   constructor() { }
 
   ngOnInit(): void {
 
   }
+  toggle(){
+    this.show=!this.show;
+}
 
   showMobileMenu() {
   }
