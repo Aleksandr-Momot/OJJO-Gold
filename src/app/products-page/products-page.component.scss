@@ -5,7 +5,12 @@ form {
     display: flex;
     justify-content: space-between;
     margin-bottom: 95px;
+    flex-wrap: wrap;
+    @media (max-width: 850px) {
+        justify-content: space-evenly;
+    }
 }
+
 .filters-form {
     margin-top: 100px;
 }
@@ -30,12 +35,19 @@ form {
       display: flex;
       justify-content: space-between;
       padding: 20px;
+      flex-wrap: wrap;
+      @media (max-width: 660px) {
+        justify-content: space-evenly;
+      }
   }
 
 .item {
     text-align: center;
     max-width: 280px;
     width: 100%;
+    @media(max-width: 940px) {
+          margin-bottom: 15px;
+    }
 }
 .item-photo {
     margin-bottom: 25px;
@@ -92,12 +104,26 @@ form {
     flex-direction: column;
     max-width: 540px;
     width: 100%;
+    margin-right: 20px;
+    @media(max-width: 840px) {
+        button {
+        text-align: center;
+            
+        }
+        margin-bottom: 30px;
+    }
+   
 }
 .main-description {
     display: flex;
     padding: 0px 75px 0px 75px;
     justify-content: space-between;
     margin-bottom: 150px;
+    @media (max-width: 840px) {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .description-icons {
@@ -127,6 +153,9 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
     ul {
         li {
             margin-bottom: 15px;
@@ -137,6 +166,10 @@ form {
             &:last-child {
                 margin-bottom: 0;
             }
+        }
+        @media (max-width: 600px) {
+            margin-bottom: 20px;
+            text-align: left;
         }
     }
 }
