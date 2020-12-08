@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "zoloto"
+  "defaultProject": "zoloto",
+  "cli": {
+    "analytics": "ad2bb6a8-5bf6-46a9-9056-35fa6670f932"
+  }
 }
