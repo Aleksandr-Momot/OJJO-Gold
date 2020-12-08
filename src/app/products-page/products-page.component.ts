@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-products-page',
@@ -11,6 +11,9 @@ export class ProductsPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.form = new FormGroup({
+      firstName: new FormControl()
+   });
   }
-
+  
 }
