@@ -8,12 +8,14 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { LandingComponent } from './landing/landing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
-    ProductsPageComponent
+    ProductsPageComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule,
