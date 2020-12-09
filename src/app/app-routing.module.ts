@@ -1,3 +1,5 @@
+import { ContactsPageComponent } from './contacts-page/contacts-page.component';
+import { ProductInfoComponent } from './product-info/product-info.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -11,8 +13,9 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: '/', pathMatch: 'full' },
       { path: 'products', component: ProductsPageComponent },
-      { path: 'product', component: ProductPageComponent },
-      { path: 'product-info/:id', component: ProductPageComponent },
+      { path: 'product-page', component: ProductPageComponent },
+      { path: 'product-info/:id', component: ProductInfoComponent },
+      { path: 'contacts', component: ContactsPageComponent },
     
       // { path: 'product-info/:id', component: PhoneInfoComponent },
       
