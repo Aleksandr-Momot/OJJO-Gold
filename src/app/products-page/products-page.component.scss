@@ -14,22 +14,7 @@ form {
 .filters-form {
     margin-top: 100px;
 }
-.custom-button, .show-more-btn, .form-wrap {
-    // display: flex;
-    // justify-content: flex-end;
-    // ::ng-deep.mat-raised-button.mat-primary.mat-button-disabled {
-    //   background-color: rgba(0, 0, 0, 0.12) !important;
-    // }
-    ::ng-deep {
-      .mat-raised-button.mat-primary {
-        background-color:  #333333;
-        border-radius: 0;
-        font-family: Gilroy;
-        font-weight: 400;
-        
-      }
-    }
-  }
+
 
   .product-items {
       display: flex;
@@ -75,22 +60,8 @@ form {
     }
  
 }
-.price-btn {
-    max-width: 124px;
-    font-size: 18px;
-}
-.show-more-btn {
-    text-align: center;
-    margin-bottom: 150px;
-}
-.more-btn {
-    font-size: 18px;
-    font-weight: 500 !important;
-    text-transform: uppercase;
-    max-width: 227px;
-    padding: 15px 35px;
-    line-height: initial;
-}
+
+
 
 .read-more {
     font-size: 18px;
@@ -104,6 +75,7 @@ form {
     flex-direction: column;
     max-width: 540px;
     width: 100%;
+    line-height: 150%;
     margin-right: 20px;
     @media(max-width: 840px) {
         button {

@@ -9,13 +9,19 @@ import { ProductsPageComponent } from './products-page/products-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { LandingComponent } from './landing/landing.component';
+import { ProductPageComponent } from './product-page/product-page.component';
+import { ProductInfoComponent } from './product-info/product-info.component';
+import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
     ProductsPageComponent,
-    LandingComponent
+    LandingComponent,
+    ProductPageComponent,
+    ProductInfoComponent,
+    ContactsPageComponent
   ],
   imports: [
     BrowserModule,

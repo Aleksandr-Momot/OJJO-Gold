@@ -1,0 +1,51 @@
+.path {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 60px;
+    a {
+        cursor: pointer;
+        padding: 0px 15px;
+    }
+}
+
+.main-title {
+    margin-bottom: 40px;
+    text-align: center;
+    h2 { 
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+.item-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-items {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.item {
+    p {
+        padding-left: 12px;
+    }
+}
+
+.map {
+    margin-bottom: 120px;
+    iframe {
+        width: 100%;
+    height: 750px;
+    }
+}
