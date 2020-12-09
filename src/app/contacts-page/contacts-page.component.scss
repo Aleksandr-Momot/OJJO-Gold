@@ -31,4 +31,17 @@
 .contacts-items {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+}
+
+.item {
+    p {
+        padding-left: 12px;
+    }
+}
+
+.map {
+    margin-bottom: 120px;
 }
