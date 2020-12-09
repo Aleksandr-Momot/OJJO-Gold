@@ -1,0 +1,23 @@
+.item {
+    text-align: center;
+    max-width: 280px;
+    width: 100%;
+    @media(max-width: 940px) {
+          margin-bottom: 15px;
+    }
+}
+.item-photo {
+    margin-bottom: 25px;
+}
+.item-description {
+    margin-bottom: 10px;
+    color: #333333;
+;
+}
+.item-name {
+    margin-bottom: 15px;
+    color: #333333;
+    font-size: 24px;
+    font-weight: 600;
+
+}
