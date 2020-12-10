@@ -15,7 +15,13 @@
                     <span class="example-spacer"></span>
                     <button mat-icon-button class="example-icon" (click)="toggle()"
                         aria-label="Example icon-button with menu icon">
-                        <mat-icon class="mobile-icon">menu</mat-icon>
+                        <span class="material-icons mobile-icon">
+                            format_align_left
+                        </span>
+
+                        <span class="material-icons clear-icon">
+                            clear
+                        </span>
                     </button>
                     <!-- <input type="checkbox" [(ngModel)]="show" /> -->
                 </mat-toolbar-row>
@@ -28,6 +34,17 @@
                         <p><a href="#">Вакансии</a></p>
                         <p><a href="#">Вход/Регистрация</a></p>
                         <span class="example-spacer"></span>
+                        <div class="cabinet-info">
+                            <a href="#"><img src="/assets/images/account.svg" alt=""></a>
+                            <a href="#"><img src="/assets/images/like.svg" alt=""></a>
+                        </div>
+                        <div class="social-group">
+                            <a href="#"><img src="/assets/images/social1.svg" alt=""></a>
+                            <a href="#"><img src="/assets/images/social2.svg" alt=""></a>
+                            <a href="#"><img src="/assets/images/social3.svg" alt=""></a>
+                            <a href="#"><img src="/assets/images/social4.svg" alt=""></a>
+                            <a href="#"><img src="/assets/images/social5.svg" alt=""></a>
+                        </div>
                     </mat-toolbar-row>
                 </mat-toolbar>
             </div>

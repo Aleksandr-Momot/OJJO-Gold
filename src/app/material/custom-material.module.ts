@@ -11,6 +11,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatSelectModule } from '@angular/material/select';
+import {MatTabsModule} from '@angular/material/tabs';
 // import { QuillModule } from 'ngx-quill';
 @NgModule({
   imports: [
@@ -28,6 +29,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatExpansionModule,
     MatIconModule,
     LayoutModule,
+    MatTabsModule
   ],
   exports: [
     MatButtonModule,
@@ -44,6 +46,7 @@ import { MatSelectModule } from '@angular/material/select';
     MatExpansionModule,
     MatIconModule,
     LayoutModule,
+    MatTabsModule
   ],
 })
 export class CustomMaterialModule {}
