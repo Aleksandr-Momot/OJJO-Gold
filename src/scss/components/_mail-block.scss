@@ -1,0 +1,71 @@
+.mail-block {
+    background-image: url(../../assets/images/Rectangle.png);
+    color: #ffffff;
+    .mail-title {
+        font-size: 21px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .mail-subtitle {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .form-wrap {
+        background-color: #ffff;
+        padding: 20px 22px;
+        align-items: center;
+        display: flex;
+    }
+    
+    .mail-form {
+        border: 1px solid #fff;
+        padding: 14px 15px;
+        input {
+            height: 45px;
+            max-width: 200px;
+            width: 100%;
+            margin-right: 15px;
+        }
+    }
+    
+    .mail-btn {
+        padding: 14.5px 35px;
+        line-height: initial;
+        display: flex;
+        justify-content: center;
+    } 
+}
+
+.mail-container {
+    max-width: 770px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.mail-form-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 600px) {
+        flex-direction: column;
+    }
+    ul {
+        li {
+            margin-bottom: 15px;
+            display: flex;
+            img {
+                margin-right: 20px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @media (max-width: 600px) {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+    }
+}
