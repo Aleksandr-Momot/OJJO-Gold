@@ -91,80 +91,80 @@
             @media(min-width: 992px) {
                 grid-template-columns: repeat(6, 1fr);
             }
-            .tab {
-                &.active {
-                    background-color: #000;
-                    a {
-                        color: #fff;
-                    }
-                }
-                a {
-                    padding: 15px 35px;
-                    border: 1px solid #D6D6D6;
-                    font-size: 18px;
-                    font-weight: 500;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: #333;
-                    display: block;
-                }
-            }
         }
-        .main-catalog {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 30px;
-            margin-top: 60px;
-            justify-items: center;
-            @media(min-width: 768px) {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            @media(min-width: 992px) {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .product {
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                width: 100%;
-                min-height: 280px;
-                @media(min-width: 768px) {
-                    max-width: 350px;
-                }
-                &:nth-child(1) {
-                    background: url("/assets/images/product1.png") top center;
-                    background-size: cover;
-                    
-                }
-                &:nth-child(2) {
-                    background: url("/assets/images/product2.png") top center;
-                    background-size: cover;
-                }
-                &:nth-child(3) {
-                    background: url("/assets/images/product3.png") top center;
-                    background-size: cover;
-                }
-                &:nth-child(4) {
-                    background: url("/assets/images/product4.png") top center;
-                    background-size: cover;
-                }
-                &:nth-child(5) {
-                    background: url("/assets/images/product5.png") top center;
-                    background-size: cover;
-                }
-                &:nth-child(6) {
-                    background: url("/assets/images/product6.png") top center;
-                    background-size: cover;
-                }
-                a {
-                    font-size: 24px;
-                    font-weight: 500;
-                    color: #fff;
-                    text-transform: uppercase;
-                    padding-bottom: 30px;
-                    text-decoration: none;
-                }
-            }
+    }
+}
+
+.mat-tab-label {
+    padding: 15px 35px;
+    border: 1px solid #D6D6D6;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+    display: block;
+}
+
+.mat-tab-labels {
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.main-catalog {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 60px;
+    justify-items: center;
+    @media(min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media(min-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        min-height: 280px;
+        @media(min-width: 768px) {
+            max-width: 350px;
+        }
+        &:nth-child(1) {
+            background: url("/assets/images/product1.png") top center;
+            background-size: cover;
+            
+        }
+        &:nth-child(2) {
+            background: url("/assets/images/product2.png") top center;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url("/assets/images/product3.png") top center;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            background: url("/assets/images/product4.png") top center;
+            background-size: cover;
+        }
+        &:nth-child(5) {
+            background: url("/assets/images/product5.png") top center;
+            background-size: cover;
+        }
+        &:nth-child(6) {
+            background: url("/assets/images/product6.png") top center;
+            background-size: cover;
+        }
+        a {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+            text-decoration: none;
         }
     }
 }

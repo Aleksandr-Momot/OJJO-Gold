@@ -12,6 +12,7 @@ import { LandingComponent } from './landing/landing.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { ProductInfoComponent } from './product-info/product-info.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContactsPageComponent } from './contacts-page/contacts-page.component';
     AppRoutingModule,
     CustomMaterialModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
