@@ -1,3 +1,4 @@
+import { LandingComponent } from './landing/landing.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { NgModule } from '@angular/core';
@@ -11,8 +12,9 @@ const routes: Routes = [
     path: '',
     component: MainLayoutComponent,
     children: [
-      { path: '', redirectTo: '/', pathMatch: 'full' },
+      { path: '', redirectTo: 'landing', pathMatch: 'full' },
       { path: 'products', component: ProductsPageComponent },
+      { path: 'landing', component: LandingComponent },
       { path: 'product-page', component: ProductPageComponent },
       { path: 'product-info/:id', component: ProductInfoComponent },
       { path: 'contacts', component: ContactsPageComponent },
