@@ -17,6 +17,8 @@ const routes: Routes = [
       { path: 'landing', component: LandingComponent },
       { path: 'product-page', component: ProductPageComponent },
       { path: 'product-info/:id', component: ProductInfoComponent },
+      { path: 'product-info/:id/landing', component: LandingComponent },
+      { path: 'product-info/:id/products', component: ProductsPageComponent },
       { path: 'contacts', component: ContactsPageComponent },
       // { path: 'product-info/:id', component: PhoneInfoComponent },
     ],

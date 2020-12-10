@@ -1,37 +1,41 @@
-<form [formGroup]="form">
+<form [formGroup]="form" (ngSubmit)="submit()">
 
 
 
     <div class="card-title">
-        <h2>Enter to admin panel</h2>
+        <h2>Вход в панель администратора</h2>
     </div>
     <!-- <div class="alert" *ngIf="auth.error$ | async as error">{{error}}</div> -->
     <div class="alert-info" *ngIf="message">{{message}}</div>
     <div class="wrap">
         <mat-form-field appearance="outline" class="custom-input">
             <mat-label>Email</mat-label>
-            <input matInput formControlName="email" placeholder="Ex. pat@example.com" autocomplete="email">
-            <mat-error class="error" id="invalidEmailError">
-                Please enter a valid email address
+            <input matInput formControlName="email" placeholder="Your email..." autocomplete="email">
+            <mat-error *ngIf="form.controls['email'].hasError('email')" class="error" id="invalidEmailError">
+                Пожалуйста введите корректный email
             </mat-error>
-            <mat-error *ngIf="form.get('email').errors.required" class="error" id="requiredEmailError">
-                Email is
-                <strong>required</strong>
+            <mat-error *ngIf="form.controls['email'].hasError('required')" class="error" id="requiredEmailError">
+                Введите
+                <strong>email</strong>
             </mat-error>
         </mat-form-field>
 
         <mat-form-field appearance="outline" class="custom-input">
             <mat-label>Password</mat-label>
-            <input matInput formControlName="password" placeholder="Ex. pat@example.com"
+            <input matInput formControlName="password" type="password" placeholder="Password..."
                 autocomplete="current-password">
-            <mat-error *ngIf="form.get('password').errors.required" class="error" id="requiredPasswordError">
-                Password is
-                <strong>required</strong>
+            <mat-error *ngIf="form.controls['password'].hasError('required')" class="error" id="requiredPasswordError">
+                Введите
+                <strong>пароль</strong>
+            </mat-error>
+            <mat-error *ngIf="form.controls['password'].hasError" class="error">
+                Паоль дожен содержать минумум
+                <strong>6 символов</strong>
             </mat-error>
         </mat-form-field>
     </div>
 
     <div class="form-btn">
-        <button mat-raised-button type="submit" color="primary" [disabled]="form.invalid || submitted">Login</button>
+        <button mat-raised-button type="submit" color="primary" [disabled]="form.invalid || submitted">Вход</button>
     </div>
 </form>
