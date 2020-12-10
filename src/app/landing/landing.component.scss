@@ -112,6 +112,13 @@
     margin-bottom: 30px;
 }
 
+.mat-tab-label-active {
+    background-color: #000;
+    &.mat-tab-label {
+        color: #fff;
+    }
+}
+
 .main-catalog {
     display: grid;
     grid-template-columns: 1fr;
