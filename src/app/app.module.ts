@@ -4,13 +4,13 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import { ProductPageComponent } from './product-page/product-page.component';
-import { ProductInfoComponent } from './product-info/product-info.component';
 import { ContactsPageComponent } from './contacts-page/contacts-page.component';
+import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
+import { ProductInfoComponent } from './shared/components/product-info/product-info.component';
+import { ProductPageComponent } from './shared/components/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import { ContactsPageComponent } from './contacts-page/contacts-page.component';
     ProductsPageComponent,
     ProductPageComponent,
     ProductInfoComponent,
-    ContactsPageComponent
+    ContactsPageComponent,
   ],
   imports: [
     BrowserModule,
