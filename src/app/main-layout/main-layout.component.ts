@@ -16,12 +16,9 @@ export class MainLayoutComponent implements OnInit {
   ngOnInit(): void {
 
   }
-  toggle(){
-    this.show=!this.show;
-}
-
-  showMobileMenu() {
+    toggle(){
+      this.show=!this.show;
   }
-}
 
+}
  
