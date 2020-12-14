@@ -78,10 +78,40 @@
     </div>
     <div class="main-description">
         <div class="description-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eligendi reprehenderit, placeat facilis
+            <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eligendi reprehenderit, placeat facilis
             maxime obcaecati rem provident itaque. Eum doloremque magni et dicta id at soluta inventore ut delectus
             voluptates!
-            <button mat-button class="read-more">Покажите еще</button>
+            <button mat-button class="read-more">Покажите еще</button> -->
+            <div class="column-right">
+                <p  [ngClass]="{
+                    'hide': toggle
+                }">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus fugit ratione in
+                    blanditiis ad tempore qui enim velit excepturi officia corporis eaque modi optio hic, vitae quod
+                    laborum esse labore sed harum minus. Quo at perferendis fuga nihil fugiat ducimus repellendus iste
+                    voluptates minus numquam dolores maiores, beatae inventore quisquam placeat quis modi corrupti
+                    incidunt id consequuntur, nam.<br>
+                    <span [ngStyle]="{
+                        'opacity': toggle ? 0.1 : 1
+                    }" class="hide-text">
+                    Atque nisi similique alias sequi odio, dolorum et repellat ipsam
+                    debitis consectetur explicabo sit in, aut, culpa quas ducimus possimus, dolorem commodi ex illo quo
+                    cumque. Quas optio sunt esse aliquid repellat enim eligendi aut quidem. Odit repudiandae aliquam
+                    voluptate fuga voluptatibus sapiente culpa reprehenderit commodi optio, ab perspiciatis explicabo
+                    officia, a aspernatur placeat, quas rerum laborum quisquam amet architecto ex? Fuga nihil
+                    blanditiis, quis. 
+                    Cupiditate deserunt labore neque aliquid beatae, corporis doloremque alias in
+                    ipsum numquam tempore temporibus fugiat aut. Magni, commodi, minus ipsam praesentium nulla officia
+                    impedit quidem ipsum ullam, dolores ratione aperiam placeat sint architecto velit voluptas explicabo
+                    in incidunt fugiat unde modi dignissimos pariatur fugit distinctio minima? Voluptatem, inventore.
+                    Facere asperiores corrupti harum. Non perferendis ut pariatur nulla, natus provident cum minima
+                    asperiores, veniam in repellat obcaecati repudiandae, modi et quos nam unde ex animi id rerum,
+                    labore..
+                    </span>
+                </p>
+
+                <button  (click)="toggle = !toggle" class="show-all">{{changeText(toggle)}}</button>
+                
+            </div>
         </div>
         <div class="description-icons">
             <div class="icon-item">

@@ -11,14 +11,21 @@ export class MainLayoutComponent implements OnInit {
 
   show = true;
 
+  visible = false;
+
   constructor() { }
 
   ngOnInit(): void {
 
   }
-    toggle(){
+  
+  isPasswordVisible = true;
+
+  toggle()  {
       this.show=!this.show;
+      this.visible=!this.visible;
   }
+
 
 }
  

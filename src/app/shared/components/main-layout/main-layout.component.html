@@ -10,23 +10,23 @@
             </div>
 
             <div class="main-logo">
-                <a href="#"><img src="/assets/images/ojjo-main-logosvg.svg" alt=""></a>
+                <a [routerLink]="['/landing']"><img src="/assets/images/ojjo-main-logosvg.svg" alt=""></a>
                 <mat-toolbar-row class="mobile-btn">
                     <span class="example-spacer"></span>
-                    <button mat-icon-button class="example-icon" (click)="toggle()"
-                        aria-label="Example icon-button with menu icon">
-                        <span class="material-icons mobile-icon">
+                    <button mat-icon-button class="example-icon" (click)="toggle()" aria-label="Example icon-button with menu icon">
+                        
+                        <span [ngClass]="{'invisible' : visible}" class="material-icons mobile-icon">
                             format_align_left
                         </span>
 
-                        <span class="material-icons clear-icon">
+                        <span [ngClass]="{'invisible' : !visible}" class="material-icons clear-icon">
                             clear
                         </span>
                     </button>
-                    <!-- <input type="checkbox" [(ngModel)]="show" /> -->
+
                 </mat-toolbar-row>
             </div>
-            <div class="mobile-menu" [ngClass]="{invisible: show}">
+            <div class="mobile-menu" [ngClass]="{'invisible': show}">
                 <mat-toolbar>
                     <mat-toolbar-row>
                         <p><a href="#">Контрагентам</a></p>
